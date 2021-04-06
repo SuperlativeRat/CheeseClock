@@ -55,7 +55,7 @@ function draw() {
   push();
   textSize(53);
   textFont(cheeseFont);
-  text("THE CHEESE CLOCK", (w / 2 - textWidth("THE CHEESE CLOCK") / 2), 70);
+  text("T H E  C H E E S E  C L O C K", (w / 2 - textWidth("T H E  C H E E S E  C L O C K") / 2), 70);
   image(cheez, w/2, h/2);
   pop();
 
