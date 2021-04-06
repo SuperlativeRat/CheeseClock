@@ -6,21 +6,45 @@ function preload() {
   comicFont = loadFont('Comic Sans MS Bold.ttf');
 
 }
-var w = window.innerWidth;
-var h = window.innerHeight;  
 
 function setup() {
+  var w = window.innerWidth;
+  var h = window.innerHeight;  
   var cnv = createCanvas(w, h);
+  console.log(
+              "████████╗██╗  ██╗███████╗\n" +
+              "╚══██╔══╝██║  ██║██╔════╝\n" +
+              "   ██║   ███████║█████╗  \n" +
+              "   ██║   ██╔══██║██╔══╝  \n" +
+              "   ██║   ██║  ██║███████╗\n" +
+              "   ╚═╝   ╚═╝  ╚═╝╚══════╝\n");
+  console.log(
+              " ██████╗██╗  ██╗███████╗███████╗███████╗███████╗\n" +
+              "██╔════╝██║  ██║██╔════╝██╔════╝██╔════╝██╔════╝\n" +
+              "██║     ███████║█████╗  █████╗  ███████╗█████╗  \n" +
+              "██║     ██╔══██║██╔══╝  ██╔══╝  ╚════██║██╔══╝  \n" +
+              "╚██████╗██║  ██║███████╗███████╗███████║███████╗\n" +
+              " ╚═════╝╚═╝  ╚═╝╚══════╝╚══════╝╚══════╝╚══════╝\n");
+  console.log(
+              " ██████╗██╗      ██████╗  ██████╗██╗  ██╗\n" +
+              "██╔════╝██║     ██╔═══██╗██╔════╝██║ ██╔╝\n" +
+              "██║     ██║     ██║   ██║██║     █████╔╝ \n" +
+              "██║     ██║     ██║   ██║██║     ██╔═██╗ \n" +
+              "╚██████╗███████╗╚██████╔╝╚██████╗██║  ██╗\n" +
+              " ╚═════╝╚══════╝ ╚═════╝  ╚═════╝╚═╝  ╚═╝\n" +
+              "                                         \n");
+
   cnv.position(((windowWidth / 2) - (width / 2)), ((windowHeight / 2) - (height / 2)));
   cheez = loadImage("cheez wheel.png");
   imageMode(CENTER);
   ratPic = loadImage("rat.png");
   angleMode(DEGREES);
   rat = new Rat();
-
 }
 
 function draw() {
+  var w = window.innerWidth;
+  var h = window.innerHeight;  
   background(0);
   rat.turn(0.4);
   let hr = hour();
@@ -31,8 +55,8 @@ function draw() {
   push();
   textSize(53);
   textFont(cheeseFont);
-  text("THE CHEESE CLOCK", (width / 2 - textWidth("THE CHEESE CLOCK") / 2), 70);
-  image(cheez, (width / 2), (height / 2));
+  text("THE CHEESE CLOCK", (w / 2 - textWidth("THE CHEESE CLOCK") / 2), 70);
+  image(cheez, w/2, h/2);
   pop();
 
   push();
