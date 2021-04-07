@@ -41,17 +41,17 @@ function setup() {
   ratPicFlipped = loadImage("rat_flipped.png");
   angleMode(DEGREES);
   rat1 = new Rat();
-  rat2 = new Rat();
-  rat3 = new Rat();
-  rat4 = new Rat();
-  rat5 = new Rat();
-  rat6 = new Rat();
-  rat7 = new Rat();
-  rat8 = new Rat();
-  rat9 = new Rat();
-  rat10 = new Rat();
-  rat11 = new Rat();
-  rat12 = new Rat();
+  // rat2 = new Rat();
+  // rat3 = new Rat();
+  // rat4 = new Rat();
+  // rat5 = new Rat();
+  // rat6 = new Rat();
+  // rat7 = new Rat();
+  // rat8 = new Rat();
+  // rat9 = new Rat();
+  // rat10 = new Rat();
+  // rat11 = new Rat();
+  // rat12 = new Rat();
 }
 
 function draw() {
